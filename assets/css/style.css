@@ -18,8 +18,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #010e1b;
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background/our-campus-arts-building.png") center center / cover no-repeat;
   left: 0;
   right: 0;
   top: 0;
@@ -68,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+  font-family: "Trajan Pro", "Times New Roman", serif;
 }
 
 #header h1 a, #header h1 a:hover {
@@ -80,13 +79,15 @@ h1, h2, h3, h4, h5, h6 {
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: #12d640;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
 }
 
 #header h2 span {
-  color: #ffc107;
-  border-bottom: 2px solid #1c7d32;
-  padding-bottom: 6px;
+  color: #fff;
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 #header img {
