@@ -9,10 +9,14 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Times New Roman", Times, serif !important;
   color: #fff;
   position: relative;
   background: transparent;
+}
+
+* {
+  font-family: "Times New Roman", Times, serif !important;
 }
 
 body::before {
@@ -41,7 +45,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Times New Roman", Times, serif !important;
 }
 
 /*--------------------------------------------------------------
@@ -55,6 +59,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   z-index: 997;
   overflow-y: auto;
+  background: rgba(0, 0, 0, 0.25) !important;
 }
 
 #header * {
@@ -62,12 +67,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h1 {
-  font-size: 48px;
+  font-size: 52px;
   margin-top: 0px;
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  font-family: "Trajan Pro", "Times New Roman", serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 #header h1 a, #header h1 a:hover {
@@ -77,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h2 {
-  font-size: 24px;
+  font-size: 28px;
   margin-top: 20px;
   color: #fff;
   font-family: "Times New Roman", Times, serif;
@@ -120,10 +125,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
   #header h1 {
-    font-size: 36px;
+    font-size: 40px;
   }
   #header h2 {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 30px;
   }
   #header .social-links {
@@ -159,8 +164,8 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: relative;
   color: #fff;
-  font-size: 19px;
-  font-family: "Poppins", sans-serif;
+  font-size: 23px;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 400;
   text-shadow: none;
 }
@@ -353,7 +358,74 @@ section .container {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #dee2e6;
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+#education .section-title h2,
+#education .portfolio .section-title h2 {
+  font-family: "Times New Roman", Times, serif !important;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 0;
+  line-height: 1px;
+}
+
+#education .portfolio {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#education .portfolio .container {
+  padding-top: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+#education .portfolio .section-title {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#education .portfolio .sectionno-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#education .portfolio .row {
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#education .row:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#education .portfolio .row .col-md-6 {
+  display: inline-block;
+  width: 48% !important;
+  margin-right: 2%;
+}
+
+#education .portfolio .row .icon-box {
+  margin-top: 0 !important;
+  width: 100%;
+}
+
+#education .portfolio .row .col-md-6:first-child,
+#education .portfolio .row .col-md-6:nth-child(2) {
+  margin-top: 0;
+}
+
+#education .portfolio .row .col-md-6:nth-child(even) {
+  margin-right: 0;
+}
+
+#education .portfolio .row .col-md-6:nth-child(n+3) {
+  margin-top: 1.5rem;
 }
 
 .section-title h2::after {
@@ -371,32 +443,69 @@ section .container {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman", Times, serif !important;
   color: #fff;
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about-me .col-lg-4 img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center 75%;
+  display: block;
+}
+
+.about-me .content {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.23) !important;
+  padding: 30px;
+  color: #fff;
+  text-align: left;
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .about-me .content h3 {
   font-weight: 700;
-  font-size: 26px;
-  color: #d9eadd;
+  font-size: 28px;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .about-me .content ul {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #fff;
+  text-align: left;
 }
 
 .about-me .content ul li {
   padding-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #fff;
+  list-style: disc;
 }
 
-.about-me .content ul i {
-  font-size: 20px;
-  padding-right: 2px;
-  color: #1c7d32;
+.about-me .content ul li::marker {
+  color: #fff;
+}
+
+.about-me .content p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #fff;
+  text-align: left;
 }
 
 .about-me .content p:last-child {
@@ -440,7 +549,7 @@ section .container {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Times New Roman", Times, serif !important;
   font-size: 14px;
 }
 
@@ -459,7 +568,7 @@ section .container {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman", Times, serif !important;
   color: #fff;
 }
 
@@ -616,7 +725,7 @@ section .container {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman", Times, serif !important;
   color: #1c7d32;
   margin-bottom: 10px;
 }
@@ -732,6 +841,302 @@ section .container {
 
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
   color: #12d640;
+}
+
+/*--------------------------------------------------------------
+# Experience Section - Custom Styling
+--------------------------------------------------------------*/
+#experience .icon-box {
+  background: rgba(255, 255, 255, 0.23) !important;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#experience .icon-box h4 {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+}
+
+#experience .icon-box h5 {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+#experience .icon-box ul,
+#experience .icon-box li {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#experience .icon-box p {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#experience .icon-box h4 span {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#experience .icon-box:hover {
+  background: rgba(255, 255, 255, 0.23) !important;
+}
+
+#experience .icon-box:hover h4 {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+}
+
+#experience .icon-box:hover h5 {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+#experience .icon-box:hover ul,
+#experience .icon-box:hover li {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#experience .icon-box:hover p {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+/*--------------------------------------------------------------
+# Extracurriculars Section - Custom Styling
+--------------------------------------------------------------*/
+#leadership .icon-box {
+  background: rgba(255, 255, 255, 0.23) !important;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#leadership .icon-box h4 {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+}
+
+#leadership .icon-box h5 {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+#leadership .icon-box ul,
+#leadership .icon-box li {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#leadership .icon-box p {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#leadership .icon-box h4 span {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#leadership .icon-box:hover {
+  background: rgba(255, 255, 255, 0.23) !important;
+}
+
+#leadership .icon-box:hover h4 {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+}
+
+#leadership .icon-box:hover h5 {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+#leadership .icon-box:hover ul,
+#leadership .icon-box:hover li {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#leadership .icon-box:hover p {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+/*--------------------------------------------------------------
+# Skills Section - Custom Styling
+--------------------------------------------------------------*/
+#skills .icon-box {
+  background: rgba(255, 255, 255, 0.23) !important;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#skills .icon-box h4 {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+#skills .icon-box h5 {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+#skills .icon-box ul,
+#skills .icon-box li {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#skills .icon-box p {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#skills .icon-box h4 span {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#skills .icon-box:hover {
+  background: rgba(255, 255, 255, 0.23) !important;
+}
+
+#skills .icon-box:hover h4 {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+#skills .icon-box:hover h5 {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+#skills .icon-box:hover ul,
+#skills .icon-box:hover li {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#skills .icon-box:hover p {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+/*--------------------------------------------------------------
+# Education Section - Custom Styling
+--------------------------------------------------------------*/
+#education .icon-box {
+  background: rgba(255, 255, 255, 0.23) !important;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#education .icon-box img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  min-height: 200px;
+  object-fit: cover;
+  object-position: left center;
+  display: block;
+  margin: 0 auto;
+}
+
+#education .icon-box a {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+#education .icon-box a img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  min-height: 200px;
+  object-fit: cover;
+  object-position: left center;
+}
+
+#education .icon-box h4,
+#education .icon-box h5 {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#education .icon-box p {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#education .icon-box a {
+  color: #fff !important;
+}
+
+#education .icon-box:hover {
+  background: rgba(255, 255, 255, 0.23) !important;
+}
+
+#education .icon-box:hover h4,
+#education .icon-box:hover h5,
+#education .icon-box:hover p,
+#education .icon-box:hover a {
+  color: #fff !important;
+}
+
+/* Certifications within Education Section */
+#education .portfolio .icon-box {
+  background: rgba(255, 255, 255, 0.23) !important;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#education .portfolio .icon-box h4 {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+#education .portfolio .icon-box h5 {
+  color: #fff !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
 }
 
 /*--------------------------------------------------------------
@@ -895,15 +1300,17 @@ section .container {
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
-  color: #444444;
-  padding: 20px;
+  color: #fff;
+  padding: 40px;
   width: 100%;
-  background: #09203a;
+  background: rgba(255, 255, 255, 0.23) !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
 }
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #dee2e6;
+  color: #fff;
   border-radius: 50%;
   padding: 14px;
   float: left;
@@ -911,18 +1318,20 @@ section .container {
 }
 
 .contact .info-box h3 {
-  font-size: 20px;
-  color: #28a745;
-  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  font-weight: normal;
   margin: 10px 0 8px 68px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .contact .info-box p {
   padding: 0;
   color: #fff;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
   margin: 0 0 0 68px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .contact .info-box .social-links {
